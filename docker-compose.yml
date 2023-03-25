@@ -1,0 +1,17 @@
+version: '3'
+services:
+  train:
+    image: balajiveluru/trainservice:v1
+    ports:
+      - "8000:80"
+
+  movie:
+    image: balajiveluru/movieservice:v1
+    ports:
+      - "8001:80"
+
+  recharge:
+    image: balajiveluru/rechargeservice:v1
+    ports:
+      - "8002:80"
+
